@@ -3,13 +3,23 @@ import '../styles/App.css';
 
 class App extends Component {
     constructor(props) {
-		super(props);
+    super(props);
+    this.state = {
+      showPara: false
+    };
+    this.handleClick = this.handleClick.bind(this);
 	};
-
+ handleClick() {
+    this.setState({
+      showPara: true
+    });
+  }
     render() {
     	return(
     		<div id="main">
-				{ /* Do not remove this main div!! */ }
+			 <button id="click" onClick={this.handleClick}>Click Me!</button>
+        {this.state.showPara && <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut voluptatum fuga magnam tenetur debitis ullam iste quibusdam est tempora?</p>}
+      
     		</div>
     	);
     }
@@ -17,4 +27,3 @@ class App extends Component {
 
 
 export default App;
-
