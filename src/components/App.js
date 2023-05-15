@@ -18,7 +18,7 @@ class App extends Component {
     	return(
     		<div id="main">
 			 <button id="click" onClick={this.handleClick}>Click Me!</button>
-        {this.state.showPara && <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut voluptatum fuga magnam tenetur debitis ullam iste quibusdam est tempora?</p>}
+        {this.state.showPara && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
       
     		</div>
     	);
